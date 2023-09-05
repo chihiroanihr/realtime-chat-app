@@ -1,4 +1,5 @@
 # realtime-chat-app
+A real-time chat application with Next.js on the client side, Node.js and Express on the server side, and Socket.IO to allow client and server communication (real-time bidirectional event-based communication).
 
 ## Preview
 
