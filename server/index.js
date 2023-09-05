@@ -20,6 +20,14 @@ const io = new Server(server, {
 io.on("connection", (socket) => {
   console.log("Connected with client.");
 
+  // Receive message from client
+  socket.on("send_message", (data) => {
+    console.log("Message arrived from client.");
+
+    // Send back to client
+    io.emit("received_message", data);
+  });
+
   // Disconnect
   socket.on("disconnect", () => {
     console.log("Disconnected with client.");
