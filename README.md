@@ -1,5 +1,9 @@
 # realtime-chat-app
 
+## Preview
+
+<img width="500" alt="image" src="https://github.com/chihiroanihr/realtime-chat-app/assets/42660669/df7c04e3-012d-4035-85c1-bf7c318ac784">
+
 ## Packages Installed
 
 ### Client
