@@ -54,6 +54,20 @@ While inside _**/server**_ folder...
    server.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
    ```
 
-5. Start your server: `npm start`
+5. Setup CORS Policy ( _**index.js**_):
 
-6. Open http://localhost:{#PORT} on browser to check server running.
+   ```js
+   ...
+   // Instantiate server via Socket.IO
+   const io = new Server(server, {
+   // CORS: allow connection between client and server who have different posts.
+   cors: {
+       origin: ["http://localhost:3000"],
+   },
+   });
+   ...
+   ```
+
+6. Start your server: `npm start`
+
+7. Open http://localhost:{#PORT} on browser to check server running.
