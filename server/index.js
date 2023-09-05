@@ -9,7 +9,12 @@ const app = express();
 const server = http.createServer(app);
 
 // Instantiate server via Socket.IO
-const io = new Server(server);
+const io = new Server(server, {
+  // CORS: allow connection between client and server who have different posts.
+  cors: {
+    origin: ["http://localhost:3000"],
+  },
+});
 
 // Connect with client
 io.on("connection", (socket) => {
