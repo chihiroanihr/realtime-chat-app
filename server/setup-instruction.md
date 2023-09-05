@@ -54,7 +54,7 @@ While inside _**/server**_ folder...
    server.listen(PORT, () => console.log(`Server is running on port: ${PORT}`));
    ```
 
-5. Setup CORS policy ( _**index.js**_):
+5. Setup CORS policy (_**index.js**_):
 
    ```js
    ...
@@ -68,7 +68,7 @@ While inside _**/server**_ folder...
    ...
    ```
 
-6. Receive message from client ( _**index.js**_):
+6. Receive message from client (_**index.js**_):
 
    ```js
    ...
