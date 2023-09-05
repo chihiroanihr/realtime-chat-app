@@ -3,8 +3,10 @@
 ## Packages Installed
 
 ### Client
-- [**Next.js**](https://nextjs.org/)
-`npx create-next-app@latest` OR `npx create-next-app@latest ./`(for creating within given directory)
+- [**Next.js**](https://nextjs.org/)</br>
+  `npx create-next-app@latest` OR `npx create-next-app@latest ./`(for creating within given directory)
+- [**Socket.IO**](https://www.npmjs.com/package/socket.io-client)</br>
+  `npm i socket.io-client`
 
 ### Server
 
