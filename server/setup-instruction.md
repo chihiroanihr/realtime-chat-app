@@ -79,6 +79,9 @@ While inside _**/server**_ folder...
         socket.on("send_message", (data) => {
             console.log("Message arrived from client.");
             console.log(data);
+
+            // Send back to client
+            io.emit("received_message", data);
         });
         ...
     });
